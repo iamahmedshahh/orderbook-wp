@@ -27,7 +27,9 @@ add_action('admin_menu', 'orderbook_admin_menu_page');
 function orderbook_render_content() {
     ?>
     <h1>OrderBook</h1>
+    <div class="orderbook-vue-wrapper">
     <div id="plugin-orderbook">
+    </div>
     </div>
     <?php
 }
