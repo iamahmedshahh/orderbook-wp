@@ -1,9 +1,9 @@
 <?php
 
 /*
-Plugin Name: Verus Vue Plugin
-Description: This plugin displays verus staked block data .
-Version: 2.0
+Plugin Name: Orderbooks Wordpress Plugin
+Description: Live Orders from AtomicDex.
+Version: 1.0
 Author: Ahmed Shah
 */
 
