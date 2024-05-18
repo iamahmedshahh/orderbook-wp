@@ -40,6 +40,7 @@ add_shortcode('order-book', 'orderbook_render_frontend'); // Shortcode usage: [o
 function admin_enqueue_orderbook_scripts( $hook ) {
     if ( 'toplevel_page_orderbook-vue' === $hook ) {
         wp_enqueue_script('app-script', plugins_url('/dist/js/app.a58f637f.js', __FILE__), array('jquery'), '1.0.0', true);
+        wp_enqueue_script('vendors-script', plugins_url('dist/js/chunk-vendors.2dead338.js', __FILE__), array('jquery'), '1.0.0', true);
         wp_enqueue_style('app-style', plugins_url('/dist/css/app.7f5d4a7b.css', __FILE__), array(), '1.0.0');
         if ( defined('WP_DEBUG') && WP_DEBUG ) {
             error_log($hook); // For testing (to be removed in production)
@@ -50,6 +51,7 @@ add_action('admin_enqueue_scripts', 'admin_enqueue_orderbook_scripts');
 
 function front_enqueue_orderbook_scripts() {
     wp_enqueue_script('app-script', plugins_url('/dist/js/app.a58f637f.js', __FILE__), array('jquery'), '1.0.0', true);
+    wp_enqueue_script('vendors-script', plugins_url('dist/js/chunk-vendors.2dead338.js', __FILE__), array('jquery'), '1.0.0', true);
     wp_enqueue_style('app-style', plugins_url('/dist/css/app.7f5d4a7b.css', __FILE__), array(), '1.0.0');
 }
 add_action('wp_enqueue_scripts', 'front_enqueue_orderbook_scripts');
