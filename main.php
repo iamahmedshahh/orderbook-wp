@@ -1,7 +1,7 @@
 <?php
 
 /*
-Plugin Name: Orderbooks Wordpress Plugin
+Plugin Name: Komodefi Markets Plugin
 Description: Live Orders from AtomicDex.
 Version: 1.0
 Author: Ahmed Shah
