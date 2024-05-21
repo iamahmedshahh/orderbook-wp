@@ -7,9 +7,9 @@ Version: 1.0
 Author: Ahmed Shah
 */
 
-if ( ! defined( 'ABSPATH' ) ) {
-    exit;
-}
+// if ( ! defined( 'ABSPATH' ) ) {
+//     exit;
+// }
 
 // function orderbook_admin_menu_page() {
 //     add_menu_page(
@@ -25,13 +25,14 @@ if ( ! defined( 'ABSPATH' ) ) {
 // add_action('admin_menu', 'orderbook_admin_menu_page');
 
 // function orderbook_render_content() {
-//     ?>
-//     <h1>OrderBook</h1>
-//     <div class="orderbook-vue-wrapper">
-//     <div id="plugin-orderbook">
-//     </div>
-//     </div>
-//     <?php
+    // */
+    /*?>
+    // <h1>OrderBook</h1>
+    // <div class="orderbook-vue-wrapper">
+    // <div id="plugin-orderbook">
+    // </div>
+    // </div>
+    // <?php */
 // }
 
 function orderbook_render_frontend() {
